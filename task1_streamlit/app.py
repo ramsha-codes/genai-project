@@ -1,6 +1,11 @@
 import streamlit as st
 import ollama
 
+# Reset button
+if st.button("Reset Chat"):
+    st.session_state.messages = []
+    st.success("Chat history has been reset!")
+
 # Title
 st.title("AI Chatbot - phi3:mini")
 
@@ -8,10 +13,13 @@ st.title("AI Chatbot - phi3:mini")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Display chat history
-for msg in st.session_state.messages:
-    with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
+# Scrollable area for the chat history
+with st.container():
+    for msg in st.session_state.messages:
+        with st.chat_message(msg["role"]):
+            st.markdown(msg["content"])
+
+st.markdown("___")  # Horizontal separator
 
 # User input
 if prompt := st.chat_input("Ask me anything..."):
@@ -31,3 +39,4 @@ if prompt := st.chat_input("Ask me anything..."):
 
     # Save assistant reply
     st.session_state.messages.append({"role": "assistant", "content": reply})
+
