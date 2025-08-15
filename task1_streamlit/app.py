@@ -1,19 +1,41 @@
 import streamlit as st
 import ollama
 
+# Add custom CSS for buttons
+st.markdown("""
+    <style>
+        .stButton > button {
+            background-color: #4E6F7D;  # Green for 'Start New Chat' button
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 12px 24px;
+        }
+        .stButton > button:hover {
+            background-color: #4F9BA8;  # Darker green on hover
+        }
+        
+        .stButton > button:nth-child(2) {
+            background-color: #f44336;  # Red for 'Reset Chat' button
+            color: white;
+        }
+        
+        .stButton > button:nth-child(2):hover {
+            background-color: #e53935;  # Darker red on hover
+        }
+    </style>
+""", unsafe_allow_html=True)
 
+
+st.markdown("___")  # Horizontal separator
 
 # Title
 st.title("AI Chatbot - phi3:mini")
+st.markdown("By Ramsha Imran (Intern @ Arch Technologies)")
 
 st.sidebar.title("Previous Conversations")
 if "conversations" not in st.session_state:
     st.session_state.conversations = []
-
-# Reset button
-if st.button("Reset Chat"):
-    st.session_state.messages = []
-    st.success("Chat history has been reset!")
 
 # Start a new chat
 if st.button("Start New Chat"):
@@ -21,6 +43,11 @@ if st.button("Start New Chat"):
     if st.session_state.messages:
         st.session_state.conversations.append(st.session_state.messages)
     st.session_state.messages = []
+
+# Reset button
+if st.button("Reset Chat"):
+    st.session_state.messages = []
+    st.success("Chat history has been reset!")
 
 # Display previous conversations in the sidebar
 for idx, prev_chat in enumerate(st.session_state.conversations):
