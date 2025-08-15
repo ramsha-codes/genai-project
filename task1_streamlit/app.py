@@ -1,13 +1,32 @@
 import streamlit as st
 import ollama
 
+
+
+# Title
+st.title("AI Chatbot - phi3:mini")
+
+st.sidebar.title("Previous Conversations")
+if "conversations" not in st.session_state:
+    st.session_state.conversations = []
+
 # Reset button
 if st.button("Reset Chat"):
     st.session_state.messages = []
     st.success("Chat history has been reset!")
 
-# Title
-st.title("AI Chatbot - phi3:mini")
+# Start a new chat
+if st.button("Start New Chat"):
+    # Save current conversation into the history before starting a new one
+    if st.session_state.messages:
+        st.session_state.conversations.append(st.session_state.messages)
+    st.session_state.messages = []
+
+# Display previous conversations in the sidebar
+for idx, prev_chat in enumerate(st.session_state.conversations):
+    with st.sidebar.expander(f"Conversation {idx + 1}"):
+        for msg in prev_chat:
+            st.markdown(f"**{msg['role']}:** {msg['content']}")
 
 # Session state for chat history
 if "messages" not in st.session_state:
