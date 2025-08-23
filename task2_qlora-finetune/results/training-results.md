@@ -39,7 +39,7 @@
 - Memory usage stayed within T4 limits
 
 ### WandB Dashboard
-![Dashboard](images/wandb-dashboard.png)
+![Dashboard](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/wandb-dashboard.png)
 
 ### Training Curves
 ![Training Metrics](images/training-loss-curve.png)
