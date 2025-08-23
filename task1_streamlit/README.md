@@ -1,6 +1,6 @@
 # Ollama Chatbot
 
-This project is a **Chatbot** powered by the **phi3:mini** model from **Ollama**, built using **Streamlit**. The chatbot allows users to interact with the model and have real-time conversations. The conversations are stored persistently in a JSON file, allowing users to view previous interactions even after restarting or reloading the app.
+This project is a **Chatbot** powered by the **phi3:mini** model from **Ollama**, built using **Streamlit**. The chatbot allows users to interact with the phi3:mini model and have real-time conversations. The conversations are stored persistently in a JSON file, allowing users to view previous interactions even after restarting or reloading the app.
 
 ---
 
