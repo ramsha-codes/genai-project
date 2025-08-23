@@ -4,16 +4,16 @@
 - **Model**: DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit
 - **Dataset**: FreedomIntelligence/medical-o1-reasoning-sft (500 samples)
 - **Training Steps**: 60
-- **Batch Size**: 1
+- **Batch Size**: 2 per device 
 - **Gradient Accumulation**: 4 steps
 - **Learning Rate**: 2e-4
 - **Optimizer**: AdamW 8-bit
 
 ## Training Progress
-- **Initial Loss**: 1.716500
-- **Final Loss**: 1.393200 
-- **Loss Reduction**: 1.716500 - 1.393200 = 0.3233
-- **Training Duration**: 16 minutes and 11 seconds
+- **Initial Loss**: 2.150300
+- **Final Loss**: 1.473100
+- **Loss Reduction**: 2.150300 - 1.473100 = 0.6772
+- **Training Duration**: 15 minutes and 14 seconds
 
 ## Memory Usage
 - **GPU**: Google Colab T4
