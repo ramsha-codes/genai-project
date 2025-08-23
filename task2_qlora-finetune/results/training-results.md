@@ -39,15 +39,15 @@
 - Memory usage stayed within T4 limits
 
 ### WandB Dashboard
-![Dashboard](images/wandb-dashboard.png)
+![Dashboard](task2_qlora-finetune/images/wandb-dashboard.png)
 
 ### Training Curves
-![Training Metrics](images/training-loss-curve.png)
+![Training Metrics](task2_qlora-finetune/images/training-loss-curve.png)
 
-![Learning Rate](images/learning-rate.png)
+![Learning Rate](task2_qlora-finetune/images/learning-rate.png)
 
 ### System Metrics
-![GPU Memory Allocated](images/gpu-memory.png)
+![GPU Memory Allocated](task2_qlora-finetune/images/gpu-memory.png)
 
-![GPU Utilized](images/gpu-utilization.png)
+![GPU Utilized](task2_qlora-finetune/images/gpu-utilization.png)
 
