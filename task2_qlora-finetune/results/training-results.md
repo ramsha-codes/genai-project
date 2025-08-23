@@ -42,13 +42,13 @@
 ![Dashboard](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/wandb-dashboard.png)
 
 ### Training Curves
-![Training Metrics](images/training-loss-curve.png)
+![Training Metrics](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/training-loss-curve.png)
 
-![Learning Rate](images/learning-rate.png)
+![Learning Rate](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/learning-rate.png)
 
 ### System Metrics
-![GPU Memory Allocated](images/gpu-memory.png)
+![GPU Memory Allocated](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/gpu-memory.png)
 
-![GPU Utilized](images/gpu-utilization.png)
+![GPU Utilized](https://github.com/ramsha-codes/genai-project/raw/main/task2_qlora-finetune/images/gpu-utilization.png)
 
 
