@@ -1,0 +1,11 @@
+unsloth[colab-new]
+transformers>=4.44.0
+accelerate
+bitsandbytes
+peft
+trl
+datasets
+torch
+wandb
+huggingface_hub
+google-colab
