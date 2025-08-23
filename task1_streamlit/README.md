@@ -53,6 +53,8 @@ Each conversation is saved as a list of messages and can be viewed in the sideba
 
 3. User Authentication: Adding user authentication to allow multiple users to have their own chat history.
 
+4. Model Selection: An drop-down menu for user to select from multiple models.
+
 # Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit pull requests. Here are a few ways you can contribute:
