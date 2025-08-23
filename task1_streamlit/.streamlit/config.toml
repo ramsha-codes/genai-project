@@ -1,8 +1,8 @@
 # .streamlit/config.toml
 
 [theme]
-primaryColor = "#000000"  # Blue buttons
-backgroundColor = "#000000"  # Navy background
-secondaryBackgroundColor = "#1A1F33"  # White panels
-textColor = "#ffffff"  # White text
-font = "sans serif"  # Choose a simple font
+primaryColor = "#000000"  
+backgroundColor = "#000000"  
+secondaryBackgroundColor = "#005F73"  
+textColor = "#ffffff"  
+font = "sans serif" 

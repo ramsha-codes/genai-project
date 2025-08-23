@@ -33,14 +33,15 @@ if st.session_state.messages:
 st.markdown("""
     <style>
         .stButton > button {
-            background-color: #4E6F7D;  
+            background-color: #white;  
             color: white;
             font-size: 18px;
             border-radius: 8px;
             padding: 12px 24px;
         }
         .stButton > button:hover {
-            background-color: #4F9BA8;  
+            background-color: #005F73;  
+            color: white;
         }
         
         .stButton > button:nth-child(2) {
@@ -49,8 +50,9 @@ st.markdown("""
         }
         
         .stButton > button:nth-child(2):hover {
-            background-color: #e53935;  
-        }
+            background-color: #e53935;
+            color: white;  
+        }   
     </style>
 """, unsafe_allow_html=True)
 
@@ -74,7 +76,7 @@ with col2:
 st.markdown("___")  # Horizontal separator
 
 # Title
-st.title("AI Chatbot - phi3:mini")
+st.title("Local AI Chatbot - phi3:mini")
 st.markdown("By Ramsha Imran (Intern @ Arch Technologies)")
 
 
